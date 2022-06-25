@@ -50,3 +50,18 @@ function calcularAreaTriangulo(){
     const area = areaTriangulo(lado1,lado2,lado3);
     alert(area);
 }
+
+function PrecioDesc(precio,descuento){
+    const PrecDesc= (precio*(100-descuento))/100;
+    return PrecDesc;   
+
+}
+
+function calcularPrecioDesc(){
+    const precio = +document.getElementById("InputPrecio").value;
+    const descuento= +document.getElementById("InputDescuento").value;
+    
+    const P = PrecioDesc(precio,descuento);
+
+    alert(P);
+}
